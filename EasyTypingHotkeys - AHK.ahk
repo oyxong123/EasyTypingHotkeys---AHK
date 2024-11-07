@@ -4,6 +4,10 @@ SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
 #If
+    +!e::
+        Send, {U+00E9}
+        Return
+
     $Tab::
         Send, {Tab}
         Return                    
